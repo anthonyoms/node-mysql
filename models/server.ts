@@ -32,9 +32,9 @@ class Server {
 
           console.log('Database Online');
             
-        } catch (error) {
-
-            throw new Error( error  );
+        } catch (ex) {
+            console.log(ex);
+            throw new Error('Some error in db');
         }
     }
 
